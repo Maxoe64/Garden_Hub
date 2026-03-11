@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeedGuide - AI-Powered Growing Assistant</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SeedGuide</h1>
+            <p class="subtitle">AI-Powered Growing Assistant</p>
+            <nav>
+                <a href="#browse" class="nav-link active" data-section="browse">Browse Seeds</a>
+                <a href="#garden" class="nav-link" data-section="garden">My Garden</a>
+                <a href="#resources" class="nav-link" data-section="resources">Library Resources</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Browse Seeds Section -->
+        <section id="browse" class="section active">
+            <h2>Choose What to Grow</h2>
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="vegetable">Vegetables</button>
+                <button class="filter-btn" data-filter="herb">Herbs</button>
+                <button class="filter-btn" data-filter="fruit">Fruits</button>
+                <button class="filter-btn" data-filter="beginner">Beginner-Friendly</button>
+            </div>
+            <div id="seed-grid" class="seed-grid"></div>
+        </section>
+
+        <!-- Seed Detail / Guide Section -->
+        <section id="seed-detail" class="section">
+            <button class="back-btn" onclick="showSection('browse')">&larr; Back to Seeds</button>
+            <div id="seed-info"></div>
+
+            <div class="guide-form">
+                <h3>Get Your Personalized Growing Guide</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Where are you growing?</label>
+                        <select id="space-select">
+                            <option value="indoor">Indoor / Windowsill</option>
+                            <option value="balcony">Balcony / Patio</option>
+                            <option value="small-yard">Small Yard</option>
+                            <option value="garden">Full Garden</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Experience Level</label>
+                        <select id="experience-select">
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>When do you want to start?</label>
+                        <input type="date" id="start-date">
+                    </div>
+                </div>
+                <button class="btn-primary" onclick="generateGuide()">Generate My Guide</button>
+            </div>
+
+            <div id="guide-result" class="guide-result hidden"></div>
+        </section>
+
+        <!-- My Garden Section -->
+        <section id="garden" class="section">
+            <h2>My Garden Planner</h2>
+            <div id="garden-empty" class="empty-state">
+                <p>You haven't added any plants yet.</p>
+                <p>Browse seeds and click "Add to My Garden" to get started!</p>
+                <button class="btn-primary" onclick="showSection('browse')">Browse Seeds</button>
+            </div>
+            <div id="garden-plants" class="garden-grid"></div>
+        </section>
+
+        <!-- Library Resources Section -->
+        <section id="resources" class="section">
+            <h2>Library & Community Resources</h2>
+
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h3>Seed Libraries</h3>
+                    <p>Many public libraries host seed libraries where you can take free seeds and return seeds from your harvest.</p>
+                    <ul>
+                        <li>Ask your local public library about their seed library program</li>
+                        <li>Search online for "[your city] seed library"</li>
+                        <li>Community gardens and food banks often share seeds too</li>
+                        <li>Learn to save seeds from your own plants</li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <h3>Tool Lending Libraries</h3>
+                    <p>Borrow gardening tools instead of buying — save money and storage space.</p>
+                    <ul>
+                        <li>Shovels, rakes, hoes, and hand tools</li>
+                        <li>Rototillers and cultivators</li>
+                        <li>Wheelbarrows and garden carts</li>
+                        <li>Pruning tools and loppers</li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <h3>Growing Equipment</h3>
+                    <p>Some libraries lend growing equipment to help you get started.</p>
+                    <ul>
+                        <li>Grow lights and heat mats for seed starting</li>
+                        <li>Soil test kits to check your soil health</li>
+                        <li>Rain gauges and garden tools</li>
+                        <li>Canning equipment for preserving harvest</li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <h3>Knowledge Resources</h3>
+                    <p>Learn from experts in your community.</p>
+                    <ul>
+                        <li>Master Gardener programs (free expert advice)</li>
+                        <li>Library gardening book collections</li>
+                        <li>Community workshops and classes</li>
+                        <li>Online courses and video tutorials</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chat Widget -->
+    <div id="chat-widget" class="chat-widget">
+        <button id="chat-toggle" class="chat-toggle" onclick="toggleChat()">
+            <span class="chat-icon">💬</span>
+            <span class="chat-close-icon hidden">✕</span>
+        </button>
+        <div id="chat-panel" class="chat-panel hidden">
+            <div class="chat-header">
+                <span>SeedGuide AI Assistant</span>
+                <div class="chat-header-actions">
+                    <button class="chat-settings-btn" onclick="toggleSettings()" title="Settings">⚙️</button>
+                    <button class="chat-close-btn" onclick="toggleChat()">✕</button>
+                </div>
+            </div>
+            <div id="chat-settings" class="chat-settings hidden">
+                <div class="settings-group">
+                    <label>AI Provider</label>
+                    <select id="provider-select" onchange="onProviderChange()">
+                        <option value="ollama">Ollama (Local)</option>
+                        <option value="anthropic">Anthropic Claude</option>
+                    </select>
+                </div>
+                <div class="settings-group" id="model-group">
+                    <label>Model</label>
+                    <select id="model-select">
+                        <option value="llama3.2">llama3.2</option>
+                    </select>
+                </div>
+                <div class="settings-group">
+                    <label>
+                        <input type="checkbox" id="web-search-toggle" checked>
+                        Enable web search
+                    </label>
+                </div>
+                <div id="settings-status" class="settings-status"></div>
+            </div>
+            <div id="chat-messages" class="chat-messages">
+                <div class="chat-message assistant">
+                    <p>Hi! I'm your SeedGuide AI assistant. Ask me anything about gardening — from seed selection to harvest tips. I can help with any plant, pest problems, soil questions, and more!</p>
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Ask about gardening..." onkeypress="if(event.key==='Enter')sendMessage()">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>SeedGuide — Making gardening accessible for everyone.</p>
+        </div>
+    </footer>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

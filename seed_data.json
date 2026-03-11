@@ -1,0 +1,466 @@
+{
+  "seeds": [
+    {
+      "id": "tomato",
+      "name": "Tomato",
+      "category": "vegetable",
+      "difficulty": "beginner",
+      "icon": "🍅",
+      "description": "One of the most rewarding garden plants. Produces abundantly in warm weather.",
+      "days_to_germination": "5-10",
+      "days_to_harvest": "60-85",
+      "sun": "Full sun (6-8 hours)",
+      "water": "1-2 inches per week, consistent moisture",
+      "soil": "Rich, well-draining, pH 6.0-6.8",
+      "temperature": {
+        "germination": "65-85°F",
+        "growing": "60-90°F",
+        "frost_tolerant": false
+      },
+      "spacing": {
+        "between_plants": "24-36 inches",
+        "between_rows": "36-48 inches",
+        "container_size": "5+ gallon"
+      },
+      "equipment": ["Tomato cage or stakes", "5+ gallon container (if indoor)", "Seed starting tray", "Potting mix", "Fertilizer (10-10-10 or tomato-specific)"],
+      "growing_steps": [
+        {"week": 0, "step": "Start seeds indoors 6-8 weeks before last frost. Plant 1/4 inch deep in seed starting mix."},
+        {"week": 1, "step": "Keep soil moist and warm (65-85°F). Seeds should germinate in 5-10 days."},
+        {"week": 3, "step": "When seedlings have 2 true leaves, transplant to larger pots. Begin hardening off."},
+        {"week": 6, "step": "Transplant outdoors after last frost. Bury stem deep — roots will grow from buried stem."},
+        {"week": 8, "step": "Install cage or stakes. Begin regular watering schedule. Mulch around base."},
+        {"week": 10, "step": "Prune suckers for indeterminate varieties. Fertilize every 2-3 weeks."},
+        {"week": 12, "step": "Watch for pests (hornworms, aphids). Remove yellow leaves at bottom."},
+        {"week": 14, "step": "Harvest when fruits are fully colored and slightly soft to touch. Pick regularly to encourage production."}
+      ],
+      "tips": [
+        "Bury the stem deep when transplanting — tomatoes grow roots from the stem",
+        "Water at the base, not the leaves, to prevent disease",
+        "Prune suckers on indeterminate varieties for larger fruit",
+        "Companion plant with basil to repel pests"
+      ]
+    },
+    {
+      "id": "lettuce",
+      "name": "Lettuce",
+      "category": "vegetable",
+      "difficulty": "beginner",
+      "icon": "🥬",
+      "description": "Fast-growing cool-weather crop. Perfect for beginners and container gardening.",
+      "days_to_germination": "2-10",
+      "days_to_harvest": "30-60",
+      "sun": "Partial to full sun (3-6 hours)",
+      "water": "1 inch per week, keep soil consistently moist",
+      "soil": "Loose, well-draining, pH 6.0-7.0",
+      "temperature": {
+        "germination": "40-75°F",
+        "growing": "45-75°F",
+        "frost_tolerant": true
+      },
+      "spacing": {
+        "between_plants": "6-12 inches",
+        "between_rows": "12-18 inches",
+        "container_size": "1+ gallon"
+      },
+      "equipment": ["Shallow container or garden bed", "Light potting mix", "Shade cloth (for hot weather)", "Spray bottle for watering seedlings"],
+      "growing_steps": [
+        {"week": 0, "step": "Sow seeds directly 1/4 inch deep. Can start indoors or outdoors in cool weather."},
+        {"week": 1, "step": "Seeds germinate quickly (2-10 days). Keep soil moist with gentle watering."},
+        {"week": 2, "step": "Thin seedlings to proper spacing. Use thinnings in salads!"},
+        {"week": 3, "step": "Begin light fertilizing. Keep soil consistently moist."},
+        {"week": 4, "step": "For leaf varieties, begin harvesting outer leaves when 4-6 inches tall."},
+        {"week": 6, "step": "Harvest head varieties when firm. Cut-and-come-again for leaf types."}
+      ],
+      "tips": [
+        "Succession plant every 2 weeks for continuous harvest",
+        "Bolts (goes to seed) in hot weather — provide afternoon shade",
+        "Great for container and windowsill growing",
+        "Plant in spring and fall for best results"
+      ]
+    },
+    {
+      "id": "basil",
+      "name": "Basil",
+      "category": "herb",
+      "difficulty": "beginner",
+      "icon": "🌿",
+      "description": "Aromatic herb that's easy to grow and essential in the kitchen.",
+      "days_to_germination": "5-10",
+      "days_to_harvest": "50-75",
+      "sun": "Full sun (6-8 hours)",
+      "water": "1 inch per week, don't let soil dry out completely",
+      "soil": "Rich, well-draining, pH 6.0-7.0",
+      "temperature": {
+        "germination": "65-75°F",
+        "growing": "60-90°F",
+        "frost_tolerant": false
+      },
+      "spacing": {
+        "between_plants": "12-18 inches",
+        "between_rows": "18-24 inches",
+        "container_size": "1+ gallon"
+      },
+      "equipment": ["Small pot or garden space", "Well-draining potting mix", "Sunny windowsill (if indoor)"],
+      "growing_steps": [
+        {"week": 0, "step": "Start seeds indoors 6 weeks before last frost. Press seeds lightly into moist soil."},
+        {"week": 1, "step": "Seeds need light to germinate. Keep warm and moist. Germination in 5-10 days."},
+        {"week": 3, "step": "Transplant seedlings when they have 2-3 sets of true leaves."},
+        {"week": 5, "step": "Move outdoors after last frost or keep on sunny windowsill."},
+        {"week": 7, "step": "Begin harvesting by pinching off top leaves. This encourages bushier growth."},
+        {"week": 8, "step": "Pinch off flower buds to keep plant producing leaves. Harvest regularly."}
+      ],
+      "tips": [
+        "Pinch off flower buds to keep the plant producing leaves",
+        "Harvest from the top down to encourage bushy growth",
+        "Excellent companion plant for tomatoes",
+        "Bring indoors before first frost or take cuttings"
+      ]
+    },
+    {
+      "id": "pepper",
+      "name": "Bell Pepper",
+      "category": "vegetable",
+      "difficulty": "intermediate",
+      "icon": "🫑",
+      "description": "Colorful and nutritious. Needs warmth and patience but very rewarding.",
+      "days_to_germination": "7-14",
+      "days_to_harvest": "60-90",
+      "sun": "Full sun (6-8 hours)",
+      "water": "1-2 inches per week",
+      "soil": "Rich, well-draining, pH 6.0-6.8",
+      "temperature": {
+        "germination": "70-85°F",
+        "growing": "65-85°F",
+        "frost_tolerant": false
+      },
+      "spacing": {
+        "between_plants": "18-24 inches",
+        "between_rows": "24-36 inches",
+        "container_size": "3+ gallon"
+      },
+      "equipment": ["Seed starting tray with heat mat", "3+ gallon container (if indoor)", "Stakes for support", "Balanced fertilizer"],
+      "growing_steps": [
+        {"week": 0, "step": "Start seeds indoors 8-10 weeks before last frost. Use heat mat for best germination."},
+        {"week": 2, "step": "Germination takes 7-14 days. Keep soil warm and moist."},
+        {"week": 4, "step": "Transplant to larger pots when seedlings have 2 true leaves."},
+        {"week": 8, "step": "Harden off and transplant outdoors when nighttime temps stay above 55°F."},
+        {"week": 10, "step": "Stake plants for support. Mulch to retain moisture and warmth."},
+        {"week": 12, "step": "Fertilize when first flowers appear. Remove early flowers to strengthen plant."},
+        {"week": 16, "step": "Harvest when peppers reach full size. Leave on plant longer for color change (green to red/yellow)."}
+      ],
+      "tips": [
+        "Use a heat mat for faster germination",
+        "Remove first few flowers to strengthen the plant",
+        "Green peppers left on the plant will turn red, yellow, or orange",
+        "Very frost-sensitive — wait until soil is warm to transplant"
+      ]
+    },
+    {
+      "id": "cucumber",
+      "name": "Cucumber",
+      "category": "vegetable",
+      "difficulty": "beginner",
+      "icon": "🥒",
+      "description": "Prolific producers that grow quickly in warm weather.",
+      "days_to_germination": "3-10",
+      "days_to_harvest": "50-70",
+      "sun": "Full sun (6-8 hours)",
+      "water": "1-2 inches per week, consistent moisture critical",
+      "soil": "Rich, well-draining, pH 6.0-7.0",
+      "temperature": {
+        "germination": "60-95°F",
+        "growing": "65-85°F",
+        "frost_tolerant": false
+      },
+      "spacing": {
+        "between_plants": "12-24 inches",
+        "between_rows": "36-60 inches",
+        "container_size": "5+ gallon"
+      },
+      "equipment": ["Trellis or cage", "Large container if growing vertically", "Mulch", "Drip irrigation (optional)"],
+      "growing_steps": [
+        {"week": 0, "step": "Direct sow 1 inch deep after last frost, or start indoors 3 weeks before transplanting."},
+        {"week": 1, "step": "Germination in 3-10 days. Keep soil warm and moist."},
+        {"week": 3, "step": "Thin to strongest seedlings at proper spacing. Install trellis."},
+        {"week": 4, "step": "Mulch heavily to retain moisture. Begin regular watering schedule."},
+        {"week": 6, "step": "Train vines onto trellis. Watch for cucumber beetles."},
+        {"week": 7, "step": "Flowers appear — ensure pollinators can reach them."},
+        {"week": 8, "step": "Harvest when 6-8 inches for slicing, 2-4 inches for pickling. Pick daily."}
+      ],
+      "tips": [
+        "Grow vertically on a trellis to save space and prevent disease",
+        "Harvest frequently to keep plants producing",
+        "Inconsistent watering causes bitter fruit",
+        "Plant dill nearby to attract beneficial insects"
+      ]
+    },
+    {
+      "id": "carrot",
+      "name": "Carrot",
+      "category": "vegetable",
+      "difficulty": "intermediate",
+      "icon": "🥕",
+      "description": "Sweet root vegetable that tastes much better homegrown than store-bought.",
+      "days_to_germination": "14-21",
+      "days_to_harvest": "70-80",
+      "sun": "Full sun to partial shade (4-6 hours)",
+      "water": "1 inch per week, keep top of soil moist during germination",
+      "soil": "Loose, sandy, rock-free, pH 6.0-6.8",
+      "temperature": {
+        "germination": "45-85°F",
+        "growing": "55-75°F",
+        "frost_tolerant": true
+      },
+      "spacing": {
+        "between_plants": "2-3 inches",
+        "between_rows": "12-18 inches",
+        "container_size": "2+ gallon (12+ inches deep)"
+      },
+      "equipment": ["Deep container (12+ inches) or raised bed", "Sandy potting mix", "Row cover (optional)", "Fine spray nozzle for watering"],
+      "growing_steps": [
+        {"week": 0, "step": "Direct sow seeds 1/4 inch deep in loose, rock-free soil. Do NOT transplant."},
+        {"week": 1, "step": "Keep soil surface moist. Cover with burlap or row cover to retain moisture."},
+        {"week": 3, "step": "Germination is slow (14-21 days). Be patient and keep watering."},
+        {"week": 4, "step": "Thin seedlings to 2-3 inches apart. This is critical for proper root development."},
+        {"week": 6, "step": "Mulch around plants. Water deeply and consistently."},
+        {"week": 8, "step": "Hill soil around tops to prevent green shoulders."},
+        {"week": 10, "step": "Harvest when tops are 1/2 to 3/4 inch in diameter. Loosen soil before pulling."}
+      ],
+      "tips": [
+        "Carrots must be direct sown — they don't transplant well",
+        "Rocky or heavy soil causes forked roots",
+        "Mix seeds with sand for easier, more even sowing",
+        "Frost actually makes carrots sweeter!"
+      ]
+    },
+    {
+      "id": "green-bean",
+      "name": "Green Bean",
+      "category": "vegetable",
+      "difficulty": "beginner",
+      "icon": "🫘",
+      "description": "Easy and productive. Bush varieties are great for containers.",
+      "days_to_germination": "4-10",
+      "days_to_harvest": "50-60",
+      "sun": "Full sun (6-8 hours)",
+      "water": "1 inch per week",
+      "soil": "Average, well-draining, pH 6.0-7.0",
+      "temperature": {
+        "germination": "60-85°F",
+        "growing": "60-85°F",
+        "frost_tolerant": false
+      },
+      "spacing": {
+        "between_plants": "4-6 inches",
+        "between_rows": "18-24 inches",
+        "container_size": "3+ gallon"
+      },
+      "equipment": ["Trellis or poles (for pole varieties)", "Inoculant (optional, helps nitrogen fixing)", "Mulch"],
+      "growing_steps": [
+        {"week": 0, "step": "Direct sow 1 inch deep after last frost. Do not start indoors — beans don't transplant well."},
+        {"week": 1, "step": "Seeds germinate quickly (4-10 days). Keep soil moist but not waterlogged."},
+        {"week": 3, "step": "For pole varieties, install support and train vines. Mulch around plants."},
+        {"week": 5, "step": "Flowers appear. Avoid overhead watering to protect blossoms."},
+        {"week": 7, "step": "Begin harvesting when beans are firm and snap cleanly. Pick every 2-3 days."},
+        {"week": 8, "step": "Continue picking to keep plants producing. Bush beans may have a second flush."}
+      ],
+      "tips": [
+        "Don't soak bean seeds before planting — it can crack them",
+        "Pick regularly to keep plants producing",
+        "Bush varieties are easier; pole varieties produce more over time",
+        "Beans fix nitrogen — great for soil improvement"
+      ]
+    },
+    {
+      "id": "strawberry",
+      "name": "Strawberry",
+      "category": "fruit",
+      "difficulty": "intermediate",
+      "icon": "🍓",
+      "description": "Sweet berries perfect for containers and hanging baskets.",
+      "days_to_germination": "7-21 (from seed), immediate (from transplant)",
+      "days_to_harvest": "60-90 (from transplant)",
+      "sun": "Full sun (6-8 hours)",
+      "water": "1-1.5 inches per week",
+      "soil": "Rich, well-draining, slightly acidic pH 5.5-6.8",
+      "temperature": {
+        "germination": "60-75°F",
+        "growing": "60-80°F",
+        "frost_tolerant": true
+      },
+      "spacing": {
+        "between_plants": "12-18 inches",
+        "between_rows": "24-36 inches",
+        "container_size": "3+ gallon or hanging basket"
+      },
+      "equipment": ["Hanging basket or container", "Straw mulch", "Bird netting", "Acidic fertilizer"],
+      "growing_steps": [
+        {"week": 0, "step": "Plant transplants (easier than seed) in spring. Set crown at soil level."},
+        {"week": 2, "step": "Water regularly. Apply straw mulch around plants to keep berries clean."},
+        {"week": 4, "step": "Pinch off first-year flowers for June-bearing types to strengthen plants. Everbearing can fruit first year."},
+        {"week": 6, "step": "Runners will appear — pin down to create new plants or trim to focus energy on fruit."},
+        {"week": 8, "step": "Berries forming. Install bird netting to protect fruit."},
+        {"week": 10, "step": "Harvest when fully red. Pick every 2-3 days. Morning harvest is sweetest."},
+        {"week": 12, "step": "After harvest, trim foliage and mulch heavily for winter protection."}
+      ],
+      "tips": [
+        "Transplants are much easier than growing from seed",
+        "Straw mulch keeps berries clean and prevents disease",
+        "Everbearing varieties produce all season long",
+        "Great for hanging baskets and containers"
+      ]
+    },
+    {
+      "id": "spinach",
+      "name": "Spinach",
+      "category": "vegetable",
+      "difficulty": "beginner",
+      "icon": "🥗",
+      "description": "Nutrient-dense cool-weather green. Fast-growing and easy.",
+      "days_to_germination": "5-14",
+      "days_to_harvest": "35-50",
+      "sun": "Partial to full sun (3-5 hours)",
+      "water": "1 inch per week, keep soil evenly moist",
+      "soil": "Rich, well-draining, pH 6.5-7.5",
+      "temperature": {
+        "germination": "40-75°F",
+        "growing": "35-75°F",
+        "frost_tolerant": true
+      },
+      "spacing": {
+        "between_plants": "4-6 inches",
+        "between_rows": "12-18 inches",
+        "container_size": "1+ gallon"
+      },
+      "equipment": ["Shallow container or garden bed", "Compost or rich soil mix", "Shade cloth (for extending season)"],
+      "growing_steps": [
+        {"week": 0, "step": "Direct sow 1/2 inch deep in cool weather (spring or fall). Can start very early."},
+        {"week": 1, "step": "Seeds germinate in 5-14 days. Keep soil consistently moist."},
+        {"week": 2, "step": "Thin seedlings to 4-6 inches apart."},
+        {"week": 3, "step": "Apply thin layer of compost as side dressing."},
+        {"week": 4, "step": "Begin harvesting outer leaves when they're large enough to eat."},
+        {"week": 5, "step": "Harvest entire plant before it bolts, or continue picking outer leaves."}
+      ],
+      "tips": [
+        "Best grown in spring and fall — bolts in hot weather",
+        "Soak seeds overnight for faster germination",
+        "Extremely cold hardy — can survive light freezes",
+        "Succession plant every 2-3 weeks for continuous harvest"
+      ]
+    },
+    {
+      "id": "radish",
+      "name": "Radish",
+      "category": "vegetable",
+      "difficulty": "beginner",
+      "icon": "🔴",
+      "description": "The fastest vegetable to grow. Harvest in as little as 3 weeks!",
+      "days_to_germination": "3-7",
+      "days_to_harvest": "22-30",
+      "sun": "Full sun to partial shade (4-6 hours)",
+      "water": "1 inch per week, even moisture",
+      "soil": "Loose, well-draining, pH 6.0-7.0",
+      "temperature": {
+        "germination": "40-75°F",
+        "growing": "50-70°F",
+        "frost_tolerant": true
+      },
+      "spacing": {
+        "between_plants": "1-2 inches",
+        "between_rows": "6-12 inches",
+        "container_size": "1+ gallon"
+      },
+      "equipment": ["Any container 6+ inches deep", "Basic potting mix", "No special equipment needed!"],
+      "growing_steps": [
+        {"week": 0, "step": "Direct sow 1/2 inch deep. One of the easiest seeds to plant."},
+        {"week": 1, "step": "Seeds germinate in 3-7 days — very fast! Thin to 1-2 inches apart."},
+        {"week": 2, "step": "Keep soil evenly moist. Radishes grow very quickly."},
+        {"week": 3, "step": "Check size by gently brushing away soil at base. Harvest when 1 inch diameter."},
+        {"week": 4, "step": "Don't leave in ground too long — they become woody and pithy. Plant more!"}
+      ],
+      "tips": [
+        "Fastest vegetable to grow — great for kids and beginners",
+        "Plant every week for continuous harvest",
+        "Gets woody if left too long — harvest on time",
+        "Great companion plant — marks rows of slow-germinating seeds"
+      ]
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "herb",
+      "difficulty": "beginner",
+      "icon": "🌱",
+      "description": "Incredibly easy to grow (almost too easy). Perfect for beginners.",
+      "days_to_germination": "10-15",
+      "days_to_harvest": "30-40",
+      "sun": "Partial to full sun (3-6 hours)",
+      "water": "Keep soil moist, tolerates wet conditions",
+      "soil": "Any soil type, pH 6.0-7.0",
+      "temperature": {
+        "germination": "65-75°F",
+        "growing": "55-85°F",
+        "frost_tolerant": true
+      },
+      "spacing": {
+        "between_plants": "18-24 inches",
+        "between_rows": "24 inches",
+        "container_size": "2+ gallon"
+      },
+      "equipment": ["Container (STRONGLY recommended to contain spread)", "Basic potting mix", "Sunny windowsill"],
+      "growing_steps": [
+        {"week": 0, "step": "Start from cuttings (easiest) or seeds. Plant in a container to prevent spreading."},
+        {"week": 1, "step": "If from seed, germination takes 10-15 days. Cuttings root in about a week."},
+        {"week": 2, "step": "Keep soil moist. Mint is very forgiving."},
+        {"week": 3, "step": "Pinch growing tips to encourage bushy growth."},
+        {"week": 4, "step": "Begin harvesting leaves as needed. Cut stems just above a leaf pair."},
+        {"week": 6, "step": "Harvest regularly — mint is vigorous and benefits from frequent cutting."}
+      ],
+      "tips": [
+        "ALWAYS grow in containers — mint is extremely invasive in garden beds",
+        "Easiest herb to grow from cuttings — just put a stem in water",
+        "Many varieties: peppermint, spearmint, chocolate mint, apple mint",
+        "Comes back year after year (perennial)"
+      ]
+    },
+    {
+      "id": "zucchini",
+      "name": "Zucchini",
+      "category": "vegetable",
+      "difficulty": "beginner",
+      "icon": "🥒",
+      "description": "Incredibly productive summer squash. One plant can feed a family!",
+      "days_to_germination": "4-7",
+      "days_to_harvest": "45-60",
+      "sun": "Full sun (6-8 hours)",
+      "water": "1-2 inches per week",
+      "soil": "Rich, well-draining, pH 6.0-7.5",
+      "temperature": {
+        "germination": "65-95°F",
+        "growing": "65-85°F",
+        "frost_tolerant": false
+      },
+      "spacing": {
+        "between_plants": "24-36 inches",
+        "between_rows": "36-48 inches",
+        "container_size": "5+ gallon"
+      },
+      "equipment": ["Large container or garden space", "Rich compost", "Mulch", "Pollination brush (if indoor)"],
+      "growing_steps": [
+        {"week": 0, "step": "Direct sow 1 inch deep after last frost, or start indoors 2-3 weeks before transplanting."},
+        {"week": 1, "step": "Fast germination (4-7 days). Keep soil warm and moist."},
+        {"week": 3, "step": "Thin to strongest plant per hill. Mulch heavily around plants."},
+        {"week": 4, "step": "Large leaves will shade out weeds. Water at base to prevent powdery mildew."},
+        {"week": 5, "step": "Flowers appear — male flowers first, then female. Hand-pollinate if needed."},
+        {"week": 6, "step": "Harvest when 6-8 inches long. Check DAILY — they grow very fast!"},
+        {"week": 8, "step": "Continue harvesting every 1-2 days. One plant can produce 6-10 lbs per week."}
+      ],
+      "tips": [
+        "Harvest small (6-8 inches) for best flavor — giant zucchini are seedy and bland",
+        "Check daily once fruiting starts — they grow incredibly fast",
+        "Male flowers appear first — don't worry if first flowers don't produce fruit",
+        "One plant is usually plenty for a family"
+      ]
+    }
+  ]
+}
