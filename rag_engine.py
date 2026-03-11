@@ -112,7 +112,7 @@ def web_search(query, max_results=3):
         return []
 
     try:
-        from duckduckgo_search import DDGS
+        from ddgs import DDGS
         with DDGS() as ddgs:
             results = list(ddgs.text(f"gardening {query}", max_results=max_results))
             return [
