@@ -58,7 +58,7 @@ def ensure_indexed():
         print("Warning: knowledge_base.txt not found")
         return
 
-    with open(kb_path, "r") as f:
+    with open(kb_path, "r", encoding="utf-8") as f:
         text = f.read()
 
     # Check if already indexed with same content

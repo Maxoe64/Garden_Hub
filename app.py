@@ -7,7 +7,7 @@ app = Flask(__name__, static_folder='static')
 CORS(app)
 
 # Load seed data
-with open(os.path.join(os.path.dirname(__file__), 'seed_data.json')) as f:
+with open(os.path.join(os.path.dirname(__file__), 'seed_data.json'), encoding='utf-8') as f:
     SEED_DATA = json.load(f)
 
 # Index knowledge base on startup
